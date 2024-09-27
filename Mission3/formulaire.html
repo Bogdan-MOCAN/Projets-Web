@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style2.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <!--MOCAN Bogdan-->
+    <header>
+        <h1>Formulaire d'inscription - Evénement en région parisienne en 2025</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="mission3.html">Accueil</a></li>
+            <li><a href="formulaire.html">Formulaire</a></li>
+            <li><a href="carte.html">Carte de visite</a></li>
+        </ul>
+    </nav>
+
+    <main>
+    <form action="#" method="post">
+        <table style="border-collapse: collapse; border: 0;">
+            <tr>
+                <td><label for="Pseudo">Pseudo* :</label></td>
+                <td><input type="text" id="Pseudo" name="Pseudo" required placeholder="Entrez votre pseudo" maxlength="30"></td>
+            </tr>
+            <tr>
+                <td><label for="Mots_de_passe">Mot de passe* :</label></td>
+                <td><input type="password" id="Mots_de_passe" name="Mots_de_passe" required placeholder="Entrez votre mot de passe" maxlength="20"></td>
+            </tr>
+            <tr>
+                <td><label for="Prenom">Prénom :</label></td>
+                <td><input type="text" id="Prenom" name="Prenom" placeholder="Entrez votre prénom" maxlength="30"></td>
+            </tr>
+            <tr>
+                <td><label for="Email">Email* :</label></td>
+                <td><input type="email" id="Email" name="Email" required placeholder="Entrez votre email" maxlength="50"></td>
+            </tr>
+            <tr>
+                <td><label for="Avatar">Avatar* :</label></td>
+                <td><input type="file" id="Avatar" name="Avatar" required></td>
+            </tr>
+            <tr>
+                <td><label for="Pays">Pays :</label></td>
+                <td>
+                    <select id="Pays" name="Pays">
+                        <option value="France">France</option>
+                        <option value="Espagne">Espagne</option>
+                        <option value="Royaume-Uni">Royaume-Uni</option>
+                        <option value="Autres">Autres</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="Fruits">Quels sont vos fruits préférés :</label></td>
+                <td>
+                    <input type="checkbox" id="fruitOrange" name="Fruits" value="Orange">
+                    <label for="fruitOrange">Orange</label>
+                    <input type="checkbox" id="fruitFraise" name="Fruits" value="Fraise">
+                    <label for="fruitFraise">Fraise</label>
+                    <input type="checkbox" id="fruitPoire" name="Fruits" value="Poire">
+                    <label for="fruitPoire">Poire</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="civilite">Civilité :</label></td>
+                <td>
+                    <input type="radio" id="civiliteMr" name="civilite" value="Homme" required>
+                    <label for="civiliteMr">Homme</label>
+                    <input type="radio" id="civiliteMme" name="civilite" value="Femme">
+                    <label for="civiliteMme">Femme</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="Ville">Ville :</label></td>
+                <td><input type="text" id="Ville" name="Ville" required placeholder="Entrez votre ville" maxlength="30"></td>
+            </tr>
+            <tr>
+                <td><label for="Code_postal">Code postal :</label></td>
+                <td><input type="text" id="Code_postal" name="Code_postal" required placeholder="Entrez votre code postal" maxlength="10"></td>
+            </tr>
+            <tr>
+                <td><label for="Adresse">Adresse :</label></td>
+                <td><textarea id="Adresse" name="Adresse" rows="4" required placeholder="Entrez votre adresse"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="date_de_naissance">Votre date de naissance :</label></td>
+                <td><input type="date" name="date_de_naissance" id="date_de_naissance" value="2024-09-01" min="1870-01-01" max="2024-09-20" required></td>
+            </tr>
+            <tr>
+                <td><label for="Jauge">Jauge :</label></td>
+                <td><input type="range" id="Jauge" name="Jauge" min="0" max="11"></td>
+            </tr>
+            <tr>
+                <td><label for="tel">Téléphone :</label></td>
+                <td><input type="tel" id="tel" name="tel" required placeholder="Entrez votre numéro de téléphone" maxlength="15"></td>
+            </tr>
+            <tr>
+                <td><label for="departement">Numéro de département :</label></td>
+                <td><input type="number" id="departement" name="departement" required placeholder="Numéro du département" maxlength="2" min="1" max="95"></td>
+            </tr>
+            <tr>
+                <td><label for="Recherche">Recherche :</label></td>
+                <td><input type="text" id="Recherche" name="Recherche" required placeholder="Entrez votre recherche" maxlength="50"></td>
+            </tr>
+            <tr>
+                <td><label for="URL">URL :</label></td>
+                <td><input type="url" id="URL" name="URL" required placeholder="Entrez l'URL" maxlength="100"></td>
+            </tr>
+            <tr>
+                <td><label for="Couleur">Couleur :</label></td>
+                <td><input type="color" id="Couleur" name="Couleur" value="#000000"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="Envoyer"></td>
+            </tr>
+        </table>
+    </form>
+
+    </main>
+
+</body>
+</html>
