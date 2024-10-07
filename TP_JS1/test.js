@@ -33,6 +33,19 @@ function calcul_moyenne() {
     var moyenne = somme/3;
 
     document.write ("Voici la moyenne : " + moyenne + "<br>");
+
+    if (moyenne<10) {
+        document.write("Vous n'êtes pas admis");
+        document.body.style.backgroundColor="red";
+    }
+    else if (moyenne>14) {
+        document.write("Vous êtes admis avec mention bien");
+        document.body.style.backgroundColor="green";
+    }
+    else {
+        document.write("Vous êtes admis avec mention passable");
+        document.body.style.backgroundColor="green";
+    }
 }
 
 function test_couleur() {
