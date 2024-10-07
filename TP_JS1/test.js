@@ -2,13 +2,13 @@ function test_age() {
     let age = prompt("Quel est votre âge ?");
     if (age<18)
     {
-        document.write("Attention accès refusé, vous êtes mineur");
-        document.body.style.backgroundColor="red";
+        document.write("Attention accès refusé, vous êtes mineur")
+        document.body.style.backgroundColor="red"
     }
     else
     {
         document.write("Ok, vous êtes majeur")
-        document.body.style.backgroundColor="green";
+        document.body.style.backgroundColor="green"
     }
 }
 
@@ -35,21 +35,21 @@ function calcul_moyenne() {
     document.write ("Voici la moyenne : " + moyenne + "<br>");
 
     if (moyenne<10) {
-        document.write("Vous n'êtes pas admis");
-        document.body.style.backgroundColor="red";
+        document.write("Vous n'êtes pas admis")
+        document.body.style.backgroundColor="red"
     }
     else if (moyenne>14) {
-        document.write("Vous êtes admis avec mention bien");
-        document.body.style.backgroundColor="green";
+        document.write("Vous êtes admis avec mention bien")
+        document.body.style.backgroundColor="green"
     }
     else {
-        document.write("Vous êtes admis avec mention passable");
-        document.body.style.backgroundColor="green";
+        document.write("Vous êtes admis avec mention passable")
+        document.body.style.backgroundColor="green"
     }
 }
 
 function test_couleur() {
-    let couleur = prompt("Saisir une couleur")
+    let couleur = prompt("Saisir une couleur");
     if (couleur == "rouge") {
         document.body.style.backgroundColor = "red"
     }

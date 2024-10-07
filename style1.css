@@ -16,5 +16,14 @@
       width: 640px; 
       padding: 50px;
       font-family: 'Lexend Deca', sans-serif; 
-      color: #2E475D;    
+      color: #2E475D;
+      font-size: 140%;
     }
+
+.block1 {
+  float: left;
+}
+
+.block2 {
+  float: right;
+}
