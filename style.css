@@ -1,0 +1,142 @@
+/* MOCAN Bogdan */
+body, ul, li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-family: Verdana, sans-serif;
+}
+
+header {
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+header hr {
+  width: 50%;
+  color: #000;
+}
+
+header label {
+  display: none;
+}
+
+header input[type="checkbox"] {
+  display: none;
+}
+
+.navigation {
+  background-color: #2c1e76;
+  width: 100%;
+}
+
+.navigation > ul {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.navigation li {
+  position: relative;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.navigation:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.navigation li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffc800;
+  padding: 0;
+  z-index: 1000;
+  border: 1px solid #444;
+}
+
+.navigation li:hover > ul {
+  display: block;
+}
+
+.navigation a {
+  color: #ffc800;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 15px;
+}
+
+.navigation li ul a {
+  color: white;
+  padding: 10px 20px;
+  width: 150px;
+  text-align: left;
+}
+
+.navigation li ul a:hover {
+  background-color: #444;
+  font-weight: bold;
+  color: #ffc800;
+}
+
+.navigation a:hover {
+  background-color: #444;
+}
+
+.navigation li:hover {
+  background-color: #444;
+  border-top: 2px solid #ffc800;
+}
+
+@media screen and (max-width: 680px) {
+  header label {
+    display: block;
+    cursor: pointer;
+    color: white;
+    padding: 10px;
+    background-color: #2c1e76;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  header input[type="checkbox"]:checked + .navigation {
+    display: block;
+  }
+
+  .navigation > ul {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .navigation li {
+    padding: 0;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .navigation a {
+    display: block;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .navigation li ul {
+    position: static;
+    width: 100%;
+  }
+
+  .navigation li ul a {
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+  }
+}
