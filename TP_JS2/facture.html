@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="facture.css" rel="stylesheet">
+    <script src="facture.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Facture en Javascript</h1>
+    <table class="table1">
+        <tr>
+            <th>Article :</th>
+            <th>Prix :</th>
+            <th>Quantité :</th>
+            <th>Résultat :</th>
+        </tr>
+        <tr>
+            <td><input type="text" placeholder="Article" id="a1"></td>
+            <td><input type="number" placeholder="Prix" id="p1"></td>
+            <td><input type="number" placeholder="Quantité" id="q1"></td>
+            <td><input type="number" id="r1" readonly></td>
+        </tr>
+        <tr>
+            <td><input type="text" placeholder="Article" id="a2"></td>
+            <td><input type="number" placeholder="Prix" id="p2"></td>
+            <td><input type="number" placeholder="Quantité" id="q2"></td>
+            <td><input type="number" id="r2" readonly></td>
+        </tr>
+        <tr>
+            <td><input type="text" placeholder="Article" id="a3"></td>
+            <td><input type="number" placeholder="Prix" id="p3"></td>
+            <td><input type="number" placeholder="Quantité" id="q3"></td>
+            <td><input type="number" id="r3" readonly></td>
+        </tr>
+        <tr>
+            <td colspan="3" class="total-label">Total :</td>
+            <td><input type="number" id="r4" readonly></td>
+        </tr>
+        <tr>
+            <td colspan="4" class="button-row">
+                <button onclick="effacer()">Réinitialiser</button>
+                <button onclick="calculer()">Résultat</button>
+            </td>
+        </tr>
+    </table>
+    
+    <h2>Retour au Sommaire du TP_JS2</h2>
+    <a href="index.html">Sommaire</a>
+</body>
+</html>
