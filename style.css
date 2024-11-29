@@ -30,25 +30,30 @@ header input[type="checkbox"] {
 .navigation {
   background-color: #2c1e76;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 5px 0;
 }
 
 .navigation > ul {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
+  align-items: center;
 }
 
 .navigation li {
   position: relative;
-  padding: 20px;
+  padding: 10px 15px; 
   color: white;
   text-align: center;
-  margin-right: 10px;
+  margin: 0 5px;
+  font-size: 14px;
 }
 
-.navigation:after {
-  content: "";
-  display: table;
-  clear: both;
+.navigation li:hover {
+  background-color: #444;
+  border-top: 2px solid #ffc800;
+  transition: background-color 0.3s, border-top 0.3s;
 }
 
 .navigation li ul {
@@ -60,6 +65,8 @@ header input[type="checkbox"] {
   padding: 0;
   z-index: 1000;
   border: 1px solid #444;
+  max-height: 200px;
+  overflow-y: auto;
 }
 
 .navigation li:hover > ul {
@@ -70,14 +77,22 @@ header input[type="checkbox"] {
   color: #ffc800;
   text-decoration: none;
   display: inline-block;
-  padding: 10px 15px;
+  padding: 5px 10px;
+}
+
+.navigation a:hover {
+  background-color: #444;
+  font-weight: bold;
+  color: #ffc800;
+  transition: background-color 0.3s;
 }
 
 .navigation li ul a {
   color: white;
-  padding: 10px 20px;
+  padding: 5px 10px;
   width: 150px;
   text-align: left;
+  font-size: 12px;
 }
 
 .navigation li ul a:hover {
@@ -86,13 +101,24 @@ header input[type="checkbox"] {
   color: #ffc800;
 }
 
-.navigation a:hover {
-  background-color: #444;
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #2c1e76;
+  color: white;
+  margin-top: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
-.navigation li:hover {
-  background-color: #444;
-  border-top: 2px solid #ffc800;
+footer a {
+  color: #ffc800;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 680px) {
@@ -118,14 +144,14 @@ header input[type="checkbox"] {
   }
 
   .navigation li {
-    padding: 0;
+    padding: 10px;
     width: 100%;
-    margin-right: 0;
+    margin: 0;
   }
 
   .navigation a {
     display: block;
-    padding: 15px;
+    padding: 10px;
     text-align: center;
   }
 
@@ -135,8 +161,7 @@ header input[type="checkbox"] {
   }
 
   .navigation li ul a {
-    width: 100%;
-    padding: 10px;
-    text-align: left;
+    font-size: 11px;
+    padding: 8px; 
   }
 }
