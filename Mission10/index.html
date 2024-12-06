@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js"></script>
+    <!-- MOCAN Bogdan -->
+    <title>Document</title>
+</head>
+<body>
+    <div class="facture-container">
+        <header>
+            <h1>FACTURE</h1>
+            <p class="nom-compagnie">Nom de la Compagnie</p>
+        </header>
+
+        <table id="factureTable">
+            <thead>
+                <tr>
+                    <th>Description</th>
+                    <th>Quantité</th>
+                    <th>Prix Unitaire (€)</th>
+                    <th>Total (€)</th>
+                </tr>
+            </thead>
+            <tbody id="factureBody">
+                <tr class="ligne">
+                    <td><input type="text" class="desc" placeholder="Article"></td>
+                    <td><input type="number" class="qte" value="1"></td>
+                    <td><input type="number" class="prix" value="0"></td>
+                    <td><input type="number" class="totalLigne" readonly></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="actions">
+            <button onclick="ajouterLigne()">Ajouter une ligne</button>
+            <button onclick="remplirAuto()">Remplir automatiquement</button>
+            <button onclick="calculerFacture()">Calculer</button>
+            <button class="btn-danger" onclick="annulerFacture()">Annuler</button>
+        </div>
+
+        <div class="resultats">
+            <p>Sous-Total : <span id="sousTotal">0</span> €</p>
+            <p>Remise : <input type="number" id="remise" value="0"> %</p>
+            <p>Taxe : <input type="number" id="taxe" value="10"> %</p>
+            <p>Frais Expédition : <input type="number" id="fraisExpedition" value="5"></p>
+            <p class="total-final">Total Général : <span id="totalGeneral">0</span> €</p>
+        </div>
+    </div>
+    <div class="back-to-menu">
+        <h2>Retour au Sommaire</h2>
+        <a href="../index.html" class="menu-button">Sommaire</a>
+    </div>
+    <footer>
+        <p>Créé par MOCAN Bogdan SIO 1 © 2024</p>
+    </footer>
+</body>
+</html>

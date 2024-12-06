@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js"></script>
+    <!-- MOCAN Bogdan -->
+</head>
+<body>
+    <!-- En-tête -->
+    <header>
+        <h1>Quizz : Connaissances sur les composants d'un PC</h1>
+    </header>
+
+    <!-- Contenu principal -->
+    <main>
+        <form id="qcm">
+            <!-- Question 1 -->
+            <div class="question">
+                <p><strong>Question 1 :</strong> Un PC peut-il démarrer sans RAM ?</p>
+                <label><input type="radio" name="q1" value="true"> Oui</label><br>
+                <label><input type="radio" name="q1" value="false"> Non</label>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="question">
+                <p><strong>Question 2 :</strong> Quelles sont les différences principales entre un SSD et un HDD ?</p>
+                <label><input type="checkbox" name="q2" value="ssd_speed"> Le SSD est plus rapide</label><br>
+                <label><input type="checkbox" name="q2" value="hdd_price"> Le HDD est moins cher</label><br>
+                <label><input type="checkbox" name="q2" value="same_tech"> Ils utilisent la même technologie</label>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question">
+                <p><strong>Question 3 :</strong> Quel composant est principalement responsable des calculs graphiques ?</p>
+                <label><input type="radio" name="q3" value="cpu"> CPU</label><br>
+                <label><input type="radio" name="q3" value="gpu"> GPU</label><br>
+                <label><input type="radio" name="q3" value="ram"> RAM</label>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="question">
+                <p><strong>Question 4 :</strong> Quelle unité est utilisée pour mesurer la vitesse des processeurs ?</p>
+                <label><input type="radio" name="q4" value="ghz"> GHz</label><br>
+                <label><input type="radio" name="q4" value="mbps"> Mbps</label><br>
+                <label><input type="radio" name="q4" value="fps"> FPS</label>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="question">
+                <p><strong>Question 5 :</strong> Quelle est la fonction principale de la RAM ?</p>
+                <label><input type="radio" name="q5" value="store_permanent"> Stocker des données de manière permanente</label><br>
+                <label><input type="radio" name="q5" value="temporary_memory"> Stocker des données temporairement</label><br>
+                <label><input type="radio" name="q5" value="process_graphics"> Traiter les graphiques</label>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="question">
+                <p><strong>Question 6 :</strong> Lequel de ces câbles est utilisé pour connecter un disque dur interne ?</p>
+                <label><input type="radio" name="q6" value="sata"> SATA</label><br>
+                <label><input type="radio" name="q6" value="hdmi"> HDMI</label><br>
+                <label><input type="radio" name="q6" value="usb"> USB</label>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="question">
+                <p><strong>Question 7 :</strong> Une alimentation de 500W est-elle suffisante pour un PC gamer haut de gamme ?</p>
+                <label><input type="radio" name="q7" value="yes"> Oui</label><br>
+                <label><input type="radio" name="q7" value="no"> Non</label>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="question">
+                <p><strong>Question 8 :</strong> Quel est l'intérêt principal d'un watercooling pour un processeur ?</p>
+                <label><input type="radio" name="q8" value="reduce_noise"> Réduire le bruit</label><br>
+                <label><input type="radio" name="q8" value="better_cooling"> Améliorer le refroidissement</label><br>
+                <label><input type="radio" name="q8" value="save_energy"> Économiser l'énergie</label>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="question">
+                <p><strong>Question 9 :</strong> Quelle est la capacité typique d'un disque dur grand public ?</p>
+                <label><input type="radio" name="q9" value="500mb"> 500 MB</label><br>
+                <label><input type="radio" name="q9" value="1tb"> 1 TB</label><br>
+                <label><input type="radio" name="q9" value="10tb"> 10 TB</label>
+            </div>
+
+            <!-- Question 10 -->
+            <div class="question">
+                <p><strong>Question 10 :</strong> Quel est le rôle d'une carte réseau dans un PC ?</p>
+                <label><input type="radio" name="q10" value="process_data"> Traiter les données graphiques</label><br>
+                <label><input type="radio" name="q10" value="connect_internet"> Permettre la connexion à Internet</label><br>
+                <label><input type="radio" name="q10" value="backup"> Sauvegarder les données</label>
+            </div>
+
+            <!-- Boutons -->
+            <div class="buttons">
+                <button type="button" onclick="testqcm()">Correction</button>
+                <button type="button" onclick="afficherCorrige()">Corrigé</button>
+                <button type="reset">Effacer</button>
+            </div>
+        </form>
+        <!-- Score -->
+        <p id="score" class="hidden"></p>
+        <div class="back-to-menu">
+            <h2>Retour au Sommaire</h2>
+            <a href="../index.html" class="menu-button">Sommaire</a>
+        </div>
+    </main>
+    <footer>
+        <p>Créé par MOCAN Bogdan SIO 1 © 2024</p>
+    </footer>
+</body>
+</html>
