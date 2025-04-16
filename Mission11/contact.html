@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactez-nous</title>
+    <link rel="stylesheet" href="contact.css">
+    <!-- MOCAN Bogdan -->
+</head>
+<body>
+    <!-- Arrière-plan flou -->
+    <div class="background-blur"></div>
+
+    <!-- Conteneur principal -->
+    <div class="contact-container">
+        <!-- Section image -->
+        <div class="contact-image">
+            <img src="../Images/Images_mission11/Zoo.jpg" alt="Zoo" />
+        </div>
+
+        <!-- Section formulaire -->
+        <div class="contact-form">
+            <h1>Contactez-nous</h1>
+            <form>
+                <label for="name">Nom</label>
+                <input type="text" id="name" name="name" placeholder="Votre nom" required>
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="Votre e-mail" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Votre message" rows="5" required></textarea>
+
+                <button type="submit">Contactez-nous</button>
+            </form>
+        </div>
+
+        <!-- Section informations -->
+        <div class="contact-info">
+            <div>
+                <h3>Contact</h3>
+                <p>zoo@gmail.com</p>
+            </div>
+            <div>
+                <h3>Basé à</h3>
+                <p>Los Angeles, Californie</p>
+            </div>
+            <div class="social-icons">
+                <a href="#"><img src="../Images/Images_mission11/LogoFacebook.png" alt="Facebook"></a>
+                <a href="#"><img src="../Images/Images_mission11/LogoInstagram.png" alt="Instagram"></a>
+                <a href="#"><img src="../Images/Images_mission11/LogoX.webp" alt="Twitter"></a>
+            </div>
+        </div>
+        <div class="return-home">
+            <button class="return-home" onclick="goBack()">Retour</button>
+
+            <!-- JavaScript -->
+            <script>
+                // Fonction pour retourner à la page précédente
+                function goBack() {
+                    if (window.history.length > 1) {
+                        // Retourne à la page précédente si elle existe dans l'historique
+                        window.history.back();
+                    } else {
+                        // Si aucune page précédente, redirige vers une page par défaut
+                        window.location.href = "index.html"; // Par exemple, page d'accueil
+                    }
+                }
+            </script>        </div>        
+    </div>
+</body>
+</html>

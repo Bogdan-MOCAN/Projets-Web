@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Créer un compte</title>
+  <link rel="stylesheet" href="inscription.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+/* Messages de sécurité du mot de passe */
+.password-criteria {
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    text-align: left;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
+}
+
+.password-criteria p {
+    margin: 5px 0;
+}
+
+/* Validations */
+.valid {
+    color: #4da6ff; /* Bleu clair */
+}
+
+.invalid {
+    color: #ff7f7f; /* Rouge doux */
+}
+
+/* Bouton désactivé */
+.btn:disabled {
+    border: 2px solid #777;
+    color: #777;
+    background: transparent;
+    cursor: not-allowed;
+}
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Créer un compte</h2>
+    <p>Veuillez remplir tous les champs.</p>
+
+    <form action="inscription.php" method="POST">
+      <div class="input-container">
+        <i class="fas fa-user"></i>
+        <input type="text" name="nom" placeholder="Nom" required />
+      </div>
+
+      <div class="input-container">
+        <i class="fas fa-user"></i>
+        <input type="text" name="prenom" placeholder="Prénom" required />
+      </div>
+
+      <div class="input-container">
+        <i class="fas fa-calendar"></i>
+        <input type="number" name="age" placeholder="Âge" required />
+      </div>
+
+      <div class="input-container">
+        <i class="fas fa-flag"></i>
+        <input type="text" name="nationalite" placeholder="Nationalité" required />
+      </div>
+
+      <div class="input-container">
+        <i class="fas fa-envelope"></i>
+        <input type="email" name="adresse_email" placeholder="Email" required />
+      </div>
+
+      <div class="input-container">
+        <i class="fas fa-lock"></i>
+        <input type="password" name="mdp" placeholder="Mot de passe" id="mdp" required oninput="checkPassword(this.value)" />
+      </div>
+
+      <!-- Critères mot de passe -->
+      <div id="password-criteria" class="password-criteria">
+        <p id="length" class="invalid">• Au moins 12 caractères</p>
+        <p id="number" class="invalid">• Au moins un chiffre</p>
+        <p id="special" class="invalid">• Au moins un caractère spécial</p>
+        <p id="uppercase" class="invalid">• Au moins une majuscule</p>
+        <p id="lowercase" class="invalid">• Au moins une minuscule</p>
+      </div>
+
+      <div class="input-container">
+        <i class="fas fa-lock"></i>
+        <input type="password" name="confirm_mdp" placeholder="Confirmer le mot de passe" required />
+      </div>
+
+      <!-- Bouton désactivé tant que les critères ne sont pas remplis -->
+      <button type="submit" class="btn" id="submitBtn" disabled>Créer un compte</button>
+    </form>
+  </div>
+
+  <script>
+    function checkPassword(password) {
+      const criteria = document.getElementById("password-criteria");
+      criteria.style.display = password.length > 0 ? "block" : "none";
+
+      const lengthValid = password.length >= 12;
+      const numberValid = /\d/.test(password);
+      const specialValid = /[^a-zA-Z0-9]/.test(password);
+      const uppercaseValid = /[A-Z]/.test(password);
+      const lowercaseValid = /[a-z]/.test(password);
+
+      document.getElementById("length").className = lengthValid ? "valid" : "invalid";
+      document.getElementById("number").className = numberValid ? "valid" : "invalid";
+      document.getElementById("special").className = specialValid ? "valid" : "invalid";
+      document.getElementById("uppercase").className = uppercaseValid ? "valid" : "invalid";
+      document.getElementById("lowercase").className = lowercaseValid ? "valid" : "invalid";
+
+      const allValid = lengthValid && numberValid && specialValid && uppercaseValid && lowercaseValid;
+      document.getElementById("submitBtn").disabled = !allValid;
+    }
+  </script>
+
+</body>
+</html>

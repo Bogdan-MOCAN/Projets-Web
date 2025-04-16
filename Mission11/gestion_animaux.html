@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion animaux - Zoo</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            height: 100vh;
+            background-color: #f0f0f0;
+            overflow-x: hidden;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+            height: 100%;
+        }
+
+        .sidebar-iframe {
+            width: 20%;
+            height: 100%;
+            border: none;
+            background-color: #333;
+        }
+
+        .main-content-iframe {
+            width: 80%;
+            height: 100%;
+            border: none;
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Iframe pour la barre latérale -->
+        <iframe class="sidebar-iframe" src="sidebar_employés.html"></iframe>
+
+        <!-- Iframe pour le contenu principal, avec un nom "main-content" -->
+        <iframe class="main-content-iframe" name="main-content" src="gestion_animaux_dashboard.php"></iframe>
+    </div>
+</body>
+</html>

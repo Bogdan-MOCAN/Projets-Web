@@ -1,0 +1,99 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+    background: url('../Images/Images_mission11/Meeting.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Container pour la sidebar et le contenu */
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+/* Sidebar Styles */
+.sidebar-menu {
+    width: 300px; /* Largeur de la sidebar */
+    height: 100%;
+    background-color: rgba(68, 68, 68, 0.8); /* Couleur de fond semi-transparente */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    box-sizing: border-box;
+    z-index: 1; /* Assure que la sidebar reste au-dessus */
+}
+
+/* Logo Section */
+.logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+/* Navigation Menu */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+nav ul li {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    background-color: #555;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Effet Hover sur les liens de navigation */
+nav ul li a:hover {
+    background-color: #007BFF; /* Couleur de fond au survol (bleu clair) */
+    transform: scale(1.05); /* Légère augmentation de taille pour effet visuel */
+}
+
+/* Logout Button */
+.logout a img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s;
+}
+
+/* Main Content Styles */
+.main-content {
+    width: calc(100% - 300px); /* Largeur restante après la sidebar */
+    height: 100%;
+    overflow: hidden; /* Évite tout débordement */
+}
+
+.main-content iframe {
+    width: 100%;
+    height: 100%;
+    border: none; /* Retire la bordure de l'iframe */
+}
