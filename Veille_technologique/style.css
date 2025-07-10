@@ -1,0 +1,168 @@
+/* Reset et base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom, #e6edf4, #f5f7fa);
+  color: #1e1e1e;
+  line-height: 1.6;
+  font-size: 15px;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 2em;
+  color: #222;
+  border-bottom: 4px solid #0078D7;
+  display: inline-block;
+  padding-bottom: 8px;
+}
+
+/* Hero */
+.gpu-hero {
+  position: relative;
+  max-width: 100%;
+  margin: 40px auto;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.gpu-hero img {
+  width: 100%;
+  display: block;
+  filter: brightness(96%);
+  transition: transform 0.3s ease;
+}
+
+.gpu-hero:hover img {
+  transform: scale(1.01);
+}
+
+.gpu-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px 30px;
+  background: rgba(255, 255, 255, 0.85);
+  color: #111;
+  width: 100%;
+  backdrop-filter: blur(6px);
+}
+
+.gpu-overlay h3 {
+  font-size: 1.4em;
+  margin-bottom: 6px;
+}
+
+.gpu-overlay p {
+  font-size: 0.95em;
+  color: #444;
+}
+
+/* Section Cards stylées */
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  margin: 40px 0;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.card.alt {
+  grid-template-columns: 1fr 1fr;
+  direction: rtl;
+}
+
+.card.alt .card-text {
+  direction: ltr;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+.card h2 {
+  color: #0078D7;
+  margin-bottom: 16px;
+  font-size: 1.3em;
+  border-left: 6px solid #0078D7;
+  padding-left: 12px;
+}
+
+.card p,
+.card li {
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+.card-img img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Listes */
+ul,
+ol {
+  padding-left: 20px;
+}
+
+/* Bouton retour */
+.back-to-menu {
+  text-align: center;
+  margin: 60px 0 40px;
+}
+
+.btn-return {
+  background: linear-gradient(135deg, #0078D7, #00aaff);
+  color: white;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 0.95em;
+  box-shadow: 0 5px 15px rgba(0, 120, 215, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-return:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 22px rgba(0, 120, 215, 0.45);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 0.85em;
+  color: #666;
+  margin-top: 60px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .card,
+  .card.alt {
+    grid-template-columns: 1fr;
+    direction: ltr !important;
+  }
+
+  .card-img img {
+    margin-top: 20px;
+  }
+}
