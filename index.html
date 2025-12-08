@@ -1,189 +1,450 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href='style.css' rel='stylesheet'>
-</head>
-<body bgcolor="#88DBFF">
-    <!-- MOCAN Bogdan -->
-    <header>
-        <h1>Portfolio - Sommaire - MOCAN Bogdan</h1>
-        <hr width="50%">
-        <label for="menu">Menu</label>
-        <input type="checkbox" id="menu">
-        
-        <nav class="navigation">
-            <ul>
-                <li>HTML & CSS
-                    <ul>
-                        <li><a href="TP1/index.html">TP 1</a></li>
-                        <li><a href="TP2/index.html">TP 2</a></li>
-                        <li><a href="TP3/formulaire1.html">TP 3</a></li>
-                        <li><a href="TP4/index.html">TP 4</a></li>
-                    </ul>
-                </li>
-                <li>Javascript
-                    <ul>
-                        <li><a href="TP_JS1/index.html">TP 1</a></li>
-                        <li><a href="TP_JS2/index.html">TP 2</a></li>
-                        <li><a href="TP_JS3/index.html">TP 3</a></li>
-                    </ul>
-                </li>
-                <li>Base de données
-                    <ul>
-                        <li><a href="Images et sources/bibliotheque.sql" target="_blank">BDD TP1 PHP</a></li>
-                        <li><a href="Images et sources/gestioncommandes_php2.sql" target="_blank">BDD TP2 PHP</a></li>
-                        <li><a href="Images et sources/gestioncommandes_php3.sql" target="_blank">BDD TP3 PHP</a></li>
-                        <li><a href="Images et sources/scolarite.sql" target="_blank">BDD TP4 PHP</a></li>
-                        <li><a href="Images et sources/chat_db.sql" target="_blank">BDD TP5 PHP</a></li>
-                        <li><a href="Images et sources/zoo.sql" target="_blank">BDD Mission 11 PHP</a></li>
-                        <li><a href="Images et sources/site_actualites.sql" target="_blank">BDD Mission 12 PHP</a></li>
-                    </ul>
-                </li>
-                <li>PHP
-                    <ul>
-                        <li><a href="Projet1PHP.zip" download>TP 1</a></li>
-                        <li><a href="Projet2PHP.zip" download>TP 2</a></li>
-                        <li><a href="Projet3PHP.zip" download>TP 3</a></li>
-                        <li><a href="Projet4PHP.zip" download>TP 4</a></li>
-                        <li><a href="Projet5PHP.zip" download>TP 5</a></li>
-                    </ul>
-                </li>
-                <li>Missions
-                    <ul>
-                        <li><a href="Mission1/index.html">Mission 1</a></li>
-                        <li><a href="Mission2/index.html">Mission 2</a></li>
-                        <li><a href="Mission3/formulaire.html">Mission 3</a></li>
-                        <li><a href="Mission4/index.html">Mission 4</a></li>
-                        <li><a href="Images et sources/Procédure_Mission_6_BDD_MOCAN Bogdan.pdf" target="_blank">Mission 6 - Fiche procédures</a></li>
-                        <li><a href="Images et sources/cin__ma.sql" target="_blank">Mission 6 - SQL</a></li>
-                        <li><a href="Mission8/index.html">Mission 8</a></li>
-                        <li><a href="Mission9/index.html">Mission 9</a></li>
-                        <li><a href="Mission10/index.html">Mission 10</a></li>
-                        <li><a href="http://sitezoo.free.nf/index.html" target="_blank">Mission 11 - En ligne</a></li>
-                        <li><a href="Mission11.zip" download>Mission 11 - Hors ligne  (à télécharger)</a></li>
-                        <li><a href="Mission12.zip" download>Mission 12 - Hors ligne  (à télécharger)</a></li>
-                    </ul>
-                </li>
-                <li>Certifications
-                    <ul>
-                        <li><a href="Images et sources/Certificat_.pdf" target="_blank">Certification 1 - LE RGPD ET SES NOTIONS CLÉS</a></li>
-                        <li><a href="Images et sources/Attestation_de_suivi.pdf" target="_blank">Certification 2 - LES PRINCIPES DE LA PROTECTION DES DONNÉES</a></li>
-                        <li><a href="Images et sources/Certificat_ (1).pdf" target="_blank">Certification 3 - LES RESPONSABILITÉS DES ACTEURS</a></li>
-                        <li><a href="Images et sources/Certificat_ (2).pdf" target="_blank">Certification 4 - LE DPO ET LES OUTILS DE LA CONFORMITÉ</a></li>
-                        <li><a href="Images et sources/Certificat_ (3).pdf" target="_blank">Certification 5 - LES COLLECTIVITÉS TERRITORIALES</a></li>
-                        <li><a href="Images et sources/Attestation_secnumacademie.pdf" target="_blank">Certification - SecNumacadémie</a></li>
-                    </ul>
-                </li>
-                <li>Projet stage
-                    <ul>
-                        <li><a href="Lenergy-wp.zip" download>Site WordPress LENERGY - Hors ligne (à télécharger)</a></li>
-                        <li><a href="Images et sources/lenergy.sql" target="_blank">BDD LENERGY</a></li>
-                        <li><a href="Images et sources/Rapport_de_stage_lenergy.pdf" target="_blank">Rapport de stage - LENERGY</a></li>
-                    </ul>
-                </li>
-                <li>Veille technologique
-                    <ul>
-                        <li><a href="Veille_technologique/index.html">Veille technologique</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <main style="padding: 20px; background-color: #00aaff71; border-radius: 10px; margin: 20px;">
-        <h2>🎓 Bienvenue sur mon portfolio</h2>
+    <!DOCTYPE html>
+    <html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio - Bogdan MOCAN</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="style.css">
+        <!-- AOS CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    </head>
+    <body class="bg-gray-50 text-gray-800">
 
-        <!-- Présentation personnelle -->
-        <section>
-            <h3>Présentation personnelle</h3>
-            <p>Je m'appelle Bogdan MOCAN, j'ai 19 ans et je suis en deuxième année de BTS SIO au lycée Parc de Vilgénis.</p>
-            <p>Passionné par l'informatique, je développe mes compétences à travers mes cours, mes projets personnels, et mon stage en entreprise.</p>
-            <p>Lors de mon stage, j'ai découvert et travaillé sur WordPress, ce qui m'a permis de me familiariser avec la création, la gestion et le déploiement de sites web. Mon site WordPress a été déployé sur une machine virtuelle sous Proxmox, illustrant la mise en place d’un service informatique dans un environnement virtualisé.</p>
-        </section>
-        <br>
+        <!-- NAVBAR MODERNE -->
+        <header class="bg-white shadow-md sticky top-0 z-50">
+            <div class="container mx-auto flex header-flex justify-between items-center py-4 px-6">
+                <h1 class="text-2xl font-bold text-blue-600">Bogdan MOCAN</h1>
+                <nav>
+                    <ul class="flex gap-6 text-gray-700 font-medium">
+                        <li><a href="#apropos" class="hover:text-blue-600">À propos</a></li>
+                        <li><a href="#competences" class="hover:text-blue-600">Compétences</a></li>
+                        <li><a href="#projets" class="hover:text-blue-600">Projets</a></li>
+                        <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-        <!-- Présentation du BTS SIO -->
-        <section>
-            <h3>Présentation du BTS SIO</h3>
-            <p>Le BTS Services Informatiques aux Organisations (SIO) est une formation en deux ans qui prépare aux métiers de l'informatique, en particulier dans les domaines du développement et de l’administration des systèmes et réseaux.</p>
-            <p>Ce BTS propose deux spécialités : <strong>SISR</strong> (Solutions d’Infrastructure, Systèmes et Réseaux) et <strong>SLAM</strong> (Solutions Logicielles et Applications Métiers).</p>
-            <p>La formation combine des enseignements théoriques et pratiques, avec de nombreux projets et stages pour acquérir des compétences techniques et professionnelles.</p>
-        </section>
-        <br>
+        <main class="container mx-auto px-6 py-10 space-y-16">
+
+            <!-- À PROPOS -->
+            <section id="apropos" class="bg-gradient-to-r from-blue-50 to-white p-8 rounded-2xl shadow-lg space-y-16" data-aos="fade-up">
+                <!-- Bloc 1 : Présentation personnelle -->
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                    <!-- Texte -->
+                    <div class="md:w-2/3 space-y-4">
+                        <h2 class="text-4xl font-bold text-blue-600">Présentation personnelle</h2>
+                        <p class="text-gray-700">Je m'appelle <strong>Bogdan MOCAN</strong>, j'ai 19 ans et je suis en deuxième année de <strong>BTS SIO</strong> au lycée Parc de Vilgénis.</p>
+                        <p class="text-gray-700">Passionné par l'informatique, je développe mes compétences à travers mes cours, mes projets et mes expériences professionnelles. Je m’intéresse particulièrement au développement web, à la gestion de projets numériques et à la création d’interfaces ergonomiques.</p>
+                    </div>
+                    <!-- Image -->
+                    <div class="md:w-1/3 flex justify-center">
+                        <img src="Images/image1.jpg" alt="Bogdan MOCAN" class="rounded-2xl shadow-xl w-full max-w-sm hover:scale-105 transition-transform duration-300">
+                    </div>
+                </div>
+
+                <!-- Bloc 2 : Stage et BTS SIO -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Bloc : Mon stage en entreprise -->
+                    <section id="stage" class="bg-gradient-to-r from-blue-50 to-white p-8 rounded-2xl shadow-lg space-y-4">
+
+                        <h2 class="text-3xl font-bold text-blue-600">Mon stage en entreprise</h2>
+
+                        <p class="text-gray-700">
+                            Durant mon stage chez <strong>Lenergy</strong>, entreprise spécialisée dans la gestion énergétique des bâtiments, j’ai participé à la création et à la gestion d’un site <strong>WordPress</strong> sur un serveur virtualisé <strong>Proxmox</strong>. J’ai pu découvrir la mise en place d’un service informatique complet, de l’installation des serveurs à la mise en ligne du site.
+                        </p>
+
+                        <h3 class="text-xl font-semibold text-gray-800">Infrastructure et outils</h3>
+                        <p class="text-gray-700">
+                            J’ai utilisé des postes sous Q4OS et des serveurs Intel Xeon avec Proxmox VE pour la virtualisation. J’ai installé des machines virtuelles incluant WordPress et GitLab, et travaillé avec des plugins tels qu’Elementor, WPForms Lite et Smush pour le développement et l’optimisation du site.
+                        </p>
+
+                        <h3 class="text-xl font-semibold text-gray-800">Développement et déploiement</h3>
+                        <p class="text-gray-700">
+                            J’ai d’abord créé un site test pour me familiariser avec WordPress et Elementor, puis développé le site vitrine de Lenergy en adaptant la structure, les couleurs et les contenus. Le site a été migré depuis la VM Proxmox vers mes postes personnels, assurant une gestion complète du déploiement.
+                        </p>
+
+                        <h3 class="text-xl font-semibold text-gray-800">Compétences acquises</h3>
+                        <ul class="list-disc list-inside text-gray-700 space-y-1">
+                            <li>Prise en main complète de WordPress et Elementor</li>
+                            <li>Installation et configuration de plugins</li>
+                            <li>Gestion d’un environnement Proxmox et de machines virtuelles</li>
+                            <li>Migration manuelle de site WordPress (fichiers + BDD)</li>
+                            <li>Optimisation du site : design, navigation, animations légères</li>
+                            <li>Développement d’un orchestrateur d’IA sur serveur local</li>
+                        </ul>
+
+                        <h3 class="text-xl font-semibold text-gray-800">Retour d’expérience</h3>
+                        <p class="text-gray-700">
+                            Ce stage m’a permis de travailler de manière autonome, de gérer un site réel de A à Z, et d’acquérir une expérience concrète en développement web et systèmes virtualisés.
+                        </p>
+                    </section>
+
+                    <!-- BTS -->
+                    <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition-shadow duration-300 space-y-4">
+                        <h3 class="text-2xl font-semibold text-blue-600 mb-2">Présentation du BTS SIO</h3>
+                        <p class="text-gray-700">
+                            Le <strong>BTS Services Informatiques aux Organisations</strong> est une formation post-bac de deux ans qui prépare aux métiers de l'informatique. 
+                            Elle combine enseignements théoriques et projets pratiques pour permettre aux étudiants de développer des compétences à la fois techniques et professionnelles.
+                        </p>
+                        <p class="text-gray-700">
+                            La formation est organisée autour de deux options principales : 
+                        </p>
+                        <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1">
+                            <li><strong>SLAM</strong> — Solutions Logicielles et Applications Métiers : conception, développement, déploiement et maintenance d’applications web, mobiles ou client-serveur, gestion des bases de données et des versions avec Git.</li>
+                            <li><strong>SISR</strong> — Solutions d’Infrastructure, Systèmes et Réseaux : installation, configuration et sécurisation des infrastructures informatiques, administration des serveurs et services réseau.</li>
+                        </ul>
+                        <p class="text-gray-700 mt-2">
+                            Le BTS SIO permet également d’acquérir des compétences en cybersécurité, en accompagnement des utilisateurs et en transformation numérique des services informatiques. Les étudiants apprennent à gérer des projets réels, à développer des applications et à administrer des systèmes tout en respectant les bonnes pratiques professionnelles.  
+                            <a href="https://www.onisep.fr/ressources/univers-formation/formations/post-bac/bts-services-informatiques-aux-organisations-option-b-solutions-logicielles-et-applications-metiers" 
+                            target="_blank" class="text-blue-600 hover:underline">
+                            En savoir plus sur le site Onisep
+                            </a>
+                        </p>
+
+                        <!-- Image illustrative BTS -->
+                        <div class="flex justify-center mt-4">
+                            <img src="Images/image3.jpg" alt="BTS SIO" class="rounded-2xl shadow-xl w-full max-w-md hover:scale-105 transition-transform duration-300">
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Bloc 3 : Résumé des projets -->
+                <div class="flex flex-col md:flex-row items-center gap-8 bg-white p-8 rounded-2xl shadow-lg">
+                    
+                    <!-- Image à gauche -->
+                    <div class="md:w-1/2 flex justify-center">
+                        <img src="Images/image2.jpg" alt="Résumé projets" class="rounded-2xl shadow-xl w-full max-w-sm hover:scale-105 transition-transform duration-300">
+                    </div>
+
+                    <!-- Texte à droite -->
+                    <div class="md:w-1/2 space-y-4">
+                        <h3 class="text-3xl font-bold text-blue-600">Résumé de mes projets réalisés</h3>
+                        <ul class="list-disc list-inside text-gray-700 space-y-2">
+                            <li>Développement front-end (HTML, CSS, JavaScript)</li>
+                            <li>Développement back-end (PHP, Laravel)</li>
+                            <li>Manipulation de bases de données MySQL</li>
+                            <li>Gestion de projets, tests et mise en production</li>
+                        </ul>
+                        <p class="text-gray-700">Actions réalisées : conception d’interfaces, programmation de fonctionnalités, gestion de bases, mise en ligne, tests utilisateurs et accompagnement technique.</p>
+                        <p class="font-semibold text-gray-800">Résultats : plusieurs sites fonctionnels, un site hébergé en ligne, et une solide maîtrise des outils professionnels (XAMPP, Git, VS Code, MySQL…)</p>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- COMPÉTENCES -->
+            <section id="competences" class="bg-gray-50 py-12" data-aos="fade-up" data-aos-delay="100">
+            <div class="container mx-auto px-6">
+                    <!-- Titre centré -->
+                    <h2 class="text-4xl font-bold text-blue-600 text-center mb-12">Compétences</h2>
+                    <p class="text-center text-gray-700 mb-12 max-w-2xl mx-auto">
+                        Voici un aperçu des compétences que j'utilise pour mener à bien mes projets, allant du design à la réalisation technique.
+                    </p>
+
+                    <!-- Grille des cards : 3 colonnes, 2 lignes -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        
+                        <!-- Ligne 1 -->
+                        <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition-shadow duration-300">
+                            <div class="text-4xl mb-3 text-center">📊</div>
+                            <h3 class="text-xl font-semibold text-blue-600 mb-4 text-center">Gestion de projet</h3>
+                            <ul class="list-disc list-inside text-gray-700 space-y-1">
+                                <li>Compréhension et reformulation des besoins utilisateurs</li>
+                                <li>Analyse des problèmes techniques et choix de solutions adaptées</li>
+                                <li>Organisation du travail et planification des tâches</li>
+                                <li>Réalisation de tests fonctionnels (formulaires, BDD, interfaces)</li>
+                                <li>Validation technique lors du déploiement</li>
+                                <li>Résolution d’incidents techniques</li>
+                                <li>Suivi de projet et documentation</li>
+                                <li>Coordination avec les équipes et communication</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition-shadow duration-300">
+                            <div class="text-4xl mb-3 text-center">💻</div>
+                            <h3 class="text-xl font-semibold text-blue-600 mb-4 text-center">Développement</h3>
+                            <ul class="list-disc list-inside text-gray-700 space-y-1">
+                                <li><strong>Front-end :</strong> HTML, CSS, JavaScript, responsive et animations légères</li>
+                                <li><strong>Back-end :</strong> PHP, MySQL/SQL, Laravel et framework MVC</li>
+                                <li>WordPress : création, personnalisation, configuration de plugins et thèmes</li>
+                                <li>Gestion de versions avec Git/GitHub et collaboration sur projets</li>
+                                <li>Intégration de scripts, formulaires et systèmes interactifs</li>
+                                <li>Optimisation des performances et sécurité du code</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition-shadow duration-300">
+                            <div class="text-4xl mb-3 text-center">🎨</div>
+                            <h3 class="text-xl font-semibold text-blue-600 mb-4 text-center">Design & UX</h3>
+                            <ul class="list-disc list-inside text-gray-700 space-y-1">
+                                <li>Création d’interfaces claires, intuitives et esthétiques</li>
+                                <li>Réalisation de maquettes, wireframes et prototypes interactifs</li>
+                                <li>Utilisation de Figma pour concevoir et organiser les pages</li>
+                                <li>Définition d’identités visuelles cohérentes : couleurs, typographies, hiérarchie</li>
+                                <li>Optimisation de l’expérience utilisateur (UX) : ergonomie et navigation intuitive</li>
+                                <li>Tests utilisateurs et retours pour amélioration continue</li>
+                            </ul>
+                        </div>
+
+                        <!-- Ligne 2 -->
+                        <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition-shadow duration-300">
+                            <div class="text-4xl mb-3 text-center">🖥️</div>
+                            <h3 class="text-xl font-semibold text-blue-600 mb-4 text-center">Systèmes & Virtualisation</h3>
+                            <ul class="list-disc list-inside text-gray-700 space-y-1">
+                                <li>Environnements Linux, configuration et administration de base</li>
+                                <li>Virtualisation avec Proxmox VE et gestion de machines virtuelles</li>
+                                <li>Utilisation d’appliances TurnKey pour déploiement rapide</li>
+                                <li>Surveillance et optimisation des ressources systèmes</li>
+                                <li>Installation et maintenance de serveurs locaux</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition-shadow duration-300">
+                            <div class="text-4xl mb-3 text-center">🛠️</div>
+                            <h3 class="text-xl font-semibold text-blue-600 mb-4 text-center">Maintenance Informatique</h3>
+                            <ul class="list-disc list-inside text-gray-700 space-y-1">
+                                <li>Montage et réparation de PC</li>
+                                <li>Dépannage matériel et logiciel</li>
+                                <li>Installation et configuration de périphériques</li>
+                                <li>Mise à jour et optimisation des systèmes</li>
+                                <li>Sauvegarde et restauration de données</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition-shadow duration-300">
+                            <div class="text-4xl mb-3 text-center">🧰</div>
+                            <h3 class="text-xl font-semibold text-blue-600 mb-4 text-center">Outils utilisés</h3>
+                            <ul class="list-disc list-inside text-gray-700 space-y-1">
+                                <li>Git, GitHub pour le versionnement et la collaboration</li>
+                                <li>Visual Studio Code pour le développement et le debug</li>
+                                <li>Suite Microsoft Office pour documentation et rapports</li>
+                                <li>XAMPP, phpMyAdmin pour les tests de bases de données</li>
+                                <li>Outils de déploiement et gestion de sites web</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- MES PROJETS -->
+            <section id="projets" class="bg-white p-8 rounded-2xl shadow-lg space-y-10" data-aos="fade-up" data-aos-delay="200">
+
+                <!-- Titre -->
+                <div class="text-center mb-8">
+                    <h2 class="text-4xl font-bold text-blue-600">Mes projets 🚀</h2>
+                    <p class="text-gray-700 mt-2">Voici une sélection de mes réalisations en BTS SIO :</p>
+                </div>
+
+                <!-- Ligne 1 : Missions, Base de données -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                    <!-- Missions -->
+                    <div class="bg-blue-50 p-6 rounded-xl shadow hover:shadow-lg transition-shadow duration-300 text-center">
+                        <div class="text-3xl mb-2">📝</div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Missions techniques</h3>
+                        <ul class="list-disc list-inside text-gray-700 space-y-1 mx-auto w-fit">
+                            <li><a href="Mission1/index.html" class="text-blue-600 hover:underline">Mission 1</a></li>
+                            <li><a href="Mission2/index.html" class="text-blue-600 hover:underline">Mission 2</a></li>
+                            <li><a href="Mission3/formulaire.html" class="text-blue-600 hover:underline">Mission 3</a></li>
+                            <li><a href="Mission4/index.html" class="text-blue-600 hover:underline">Mission 4</a></li>
+                            <li><a href="Images et sources/Procédure_Mission_6_BDD_MOCAN Bogdan.pdf" target="_blank" class="text-blue-600 hover:underline">Mission 6 - Fiche procédures</a></li>
+                            <li><a href="Images et sources/cin__ma.sql" target="_blank" class="text-blue-600 hover:underline">Mission 6 - SQL</a></li>
+                            <li><a href="Mission8/index.html" class="text-blue-600 hover:underline">Mission 8</a></li>
+                            <li><a href="Mission9/index.html" class="text-blue-600 hover:underline">Mission 9</a></li>
+                            <li><a href="Mission10/index.html" class="text-blue-600 hover:underline">Mission 10</a></li>
+                            <li><a href="http://sitezoo.free.nf/index.html" target="_blank" class="text-blue-600 hover:underline">Mission 11 - En ligne</a></li>
+                            <li><a href="Mission11.zip" download class="text-blue-600 hover:underline">Mission 11 - Hors ligne</a></li>
+                            <li><a href="Mission12.zip" download class="text-blue-600 hover:underline">Mission 12 - Hors ligne</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Base de données -->
+                    <div class="bg-blue-50 p-6 rounded-xl shadow hover:shadow-lg transition-shadow duration-300 text-center">
+                        <div class="text-3xl mb-2">💾</div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Base de données</h3>
+                        <ul class="list-disc list-inside text-gray-700 space-y-1 mx-auto w-fit">
+                            <li><a href="Images et sources/bibliotheque.sql" target="_blank" class="text-blue-600 hover:underline">BDD TP1 PHP</a></li>
+                            <li><a href="Images et sources/gestioncommandes_php2.sql" target="_blank" class="text-blue-600 hover:underline">BDD TP2 PHP</a></li>
+                            <li><a href="Images et sources/gestioncommandes_php3.sql" target="_blank" class="text-blue-600 hover:underline">BDD TP3 PHP</a></li>
+                            <li><a href="Images et sources/scolarite.sql" target="_blank" class="text-blue-600 hover:underline">BDD TP4 PHP</a></li>
+                            <li><a href="Images et sources/chat_db.sql" target="_blank" class="text-blue-600 hover:underline">BDD TP5 PHP</a></li>
+                            <li><a href="Images et sources/zoo.sql" target="_blank" class="text-blue-600 hover:underline">BDD Mission 11 PHP</a></li>
+                            <li><a href="Images et sources/site_actualites.sql" target="_blank" class="text-blue-600 hover:underline">BDD Mission 12 PHP</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Ligne 2 : HTML & CSS, JavaScript, PHP -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                    <!-- HTML & CSS -->
+                    <div class="bg-green-50 p-6 rounded-xl shadow hover:shadow-lg transition-shadow duration-300 text-center">
+                        <div class="text-3xl mb-2">🌐</div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">HTML & CSS</h3>
+                        <ul class="list-disc list-inside text-gray-700 space-y-1 mx-auto w-fit">
+                            <li><a href="TP1/index.html" class="text-blue-600 hover:underline">TP 1</a></li>
+                            <li><a href="TP2/index.html" class="text-blue-600 hover:underline">TP 2</a></li>
+                            <li><a href="TP3/formulaire1.html" class="text-blue-600 hover:underline">TP 3</a></li>
+                            <li><a href="TP4/index.html" class="text-blue-600 hover:underline">TP 4</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- JavaScript -->
+                    <div class="bg-green-50 p-6 rounded-xl shadow hover:shadow-lg transition-shadow duration-300 text-center">
+                        <div class="text-3xl mb-2">⚡</div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">JavaScript</h3>
+                        <ul class="list-disc list-inside text-gray-700 space-y-1 mx-auto w-fit">
+                            <li><a href="TP_JS1/index.html" class="text-blue-600 hover:underline">TP 1</a></li>
+                            <li><a href="TP_JS2/index.html" class="text-blue-600 hover:underline">TP 2</a></li>
+                            <li><a href="TP_JS3/index.html" class="text-blue-600 hover:underline">TP 3</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- PHP -->
+                    <div class="bg-green-50 p-6 rounded-xl shadow hover:shadow-lg transition-shadow duration-300 text-center">
+                        <div class="text-3xl mb-2">💻</div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">PHP</h3>
+                        <ul class="list-disc list-inside text-gray-700 space-y-1 mx-auto w-fit">
+                            <li><a href="Projet1PHP.zip" download class="text-blue-600 hover:underline">TP 1</a></li>
+                            <li><a href="Projet2PHP.zip" download class="text-blue-600 hover:underline">TP 2</a></li>
+                            <li><a href="Projet3PHP.zip" download class="text-blue-600 hover:underline">TP 3</a></li>
+                            <li><a href="Projet4PHP.zip" download class="text-blue-600 hover:underline">TP 4</a></li>
+                            <li><a href="Projet5PHP.zip" download class="text-blue-600 hover:underline">TP 5</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Ligne 3 : Certifications, Projet stage, Veille technologique -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                    <!-- Certifications -->
+                    <div class="bg-yellow-50 p-6 rounded-xl shadow hover:shadow-lg transition-shadow duration-300 text-center">
+                        <div class="text-3xl mb-2">📜</div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Certifications</h3>
+                        <ul class="list-disc list-inside text-gray-700 space-y-1 mx-auto w-fit">
+                            <li><a href="Images et sources/Certificat_.pdf" target="_blank" class="text-blue-600 hover:underline">Certification 1 - LE RGPD ET SES NOTIONS CLÉS</a></li>
+                            <li><a href="Images et sources/Attestation_de_suivi.pdf" target="_blank" class="text-blue-600 hover:underline">Certification 2 - LES PRINCIPES DE LA PROTECTION DES DONNÉES</a></li>
+                            <li><a href="Images et sources/Certificat_ (1).pdf" target="_blank" class="text-blue-600 hover:underline">Certification 3 - LES RESPONSABILITÉS DES ACTEURS</a></li>
+                            <li><a href="Images et sources/Certificat_ (2).pdf" target="_blank" class="text-blue-600 hover:underline">Certification 4 - LE DPO ET LES OUTILS DE LA CONFORMITÉ</a></li>
+                            <li><a href="Images et sources/Certificat_ (3).pdf" target="_blank" class="text-blue-600 hover:underline">Certification 5 - LES COLLECTIVITÉS TERRITORIALES</a></li>
+                            <li><a href="Images et sources/Attestation_secnumacademie.pdf" target="_blank" class="text-blue-600 hover:underline">Certification - SecNumacadémie</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Projet Stage -->
+                    <div class="bg-yellow-50 p-6 rounded-xl shadow hover:shadow-lg transition-shadow duration-300 text-center">
+                        <div class="text-3xl mb-2">🏢</div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Projet stage</h3>
+                        <ul class="list-disc list-inside text-gray-700 space-y-1 mx-auto w-fit">
+                            <li><a href="Lenergy-wp.zip" download class="text-blue-600 hover:underline">Site WordPress LENERGY - Hors ligne</a></li>
+                            <li><a href="Images et sources/lenergy.sql" target="_blank" class="text-blue-600 hover:underline">BDD LENERGY</a></li>
+                            <li><a href="Images et sources/Rapport_de_stage_lenergy.pdf" target="_blank" class="text-blue-600 hover:underline">Rapport de stage - LENERGY</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Veille technologique -->
+                    <div class="bg-yellow-50 p-6 rounded-xl shadow hover:shadow-lg transition-shadow duration-300 text-center">
+                        <div class="text-3xl mb-2">🔍</div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Veille technologique</h3>
+                        <ul class="list-disc list-inside text-gray-700 space-y-1 mx-auto w-fit">
+                            <li><a href="Veille_technologique/index.html" class="text-blue-600 hover:underline">Veille technologique</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CONTACT -->
+            <section id="contact" class="bg-white p-10 rounded-2xl shadow-xl mt-16" data-aos="fade-up" data-aos-delay="300">
+
+                <!-- Titre centré -->
+                <h2 class="text-4xl font-bold text-blue-600 text-center mb-10">Contact</h2>
+
+                <!-- Contenu en 2 colonnes -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+
+                    <!-- IMAGE agrandie -->
+                    <div class="h-full">
+                        <img src="Images/image4.jpg" 
+                            alt="Contact illustration" 
+                            class="h-full w-full object-cover rounded-xl shadow-md">
+                    </div>
 
 
-        <!-- Résumé des projets réalisés -->
-        <section>
-            <h3>Résumé des projets réalisés</h3>
-            <p>Au cours de ma formation, j’ai réalisé plusieurs projets en HTML/CSS, JavaScript, PHP avec bases de données, et plus récemment sous Laravel. Ces projets m’ont permis de développer des compétences en :</p>
-            <ul>
-                <li>Développement front-end (HTML, CSS, JS)</li>
-                <li>Gestion et manipulation de bases de données MySQL</li>
-                <li>Développement back-end avec PHP et framework Laravel</li>
-                <li>Gestion de projets, tests, déploiement et mise en production</li>
-            </ul>
-            <p><strong>Actions réalisées :</strong> conception d’interfaces, programmation des fonctionnalités, gestion des bases, mise en ligne, tests et accompagnement utilisateur.</p>
-            <p><strong>Résultats :</strong> plusieurs sites fonctionnels, un site hébergé en ligne, et une bonne maîtrise des outils et langages.</p>
-            <p>Les projets m'ont permis de travailler en mode projet et de mettre en place mon propre environnement de développement, avec l'utilisation de <strong>XAMPP, Git, Visual Studio Code</strong> et d'autres outils professionnels.</p>
-        </section>
-        <br>
+                    <!-- FORMULAIRE -->
+                    <div class="bg-gray-50 p-6 rounded-xl shadow-lg">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-4">Me contacter 📩</h3>
+                        <p class="text-gray-600 mb-6">
+                            Une question, une opportunité ou un projet ?  
+                            Envoyez-moi un message et je vous répondrai rapidement.
+                        </p>
 
-        <!-- Infos importantes sur projets PHP -->
-        <section>
-            <h3>📌 À savoir pour les projets PHP avec base de données :</h3>
-            <ul>
-                <li>Le code source PHP est disponible dans le dossier du projet.</li>
-                <li>Un fichier <code>.sql</code> contenant la base de données est fourni pour chaque projet nécessitant une BDD.</li>
-                <li>Ces fichiers <strong>sont téléchargeables directement</strong> depuis la section <em>"Base de données"</em> du menu de navigation ci-dessus.</li>
-                <li>Pour tester ces projets, il est nécessaire d'utiliser un environnement local tel que <strong>EasyPHP</strong>, <strong>XAMPP</strong> ou <strong>WampServer</strong>.</li>
-                <li>Importez la base de données via <code>phpMyAdmin</code> avant de lancer le site en local.</li>
-                <li>GitHub ne prenant pas en charge l’exécution de PHP, ces projets ne sont pas consultables en ligne.</li>
-            </ul>
-        </section>
-        <br>
+                        <form action="https://formspree.io/f/xdkqdkpk" method="POST" class="space-y-4">
 
-        <!-- Expérience et compétences professionnelles -->
-        <section>
-            <h3>🛠️ Expériences professionnelles et incidents rencontrés</h3>
-            <p>Durant mon stage, j'ai été confronté à plusieurs incidents techniques :</p>
-            <ul>
-                <li>Un problème de configuration réseau : j’ai dû modifier l’IP <code>192.168.10.114</code> en <code>localhost/Lenergy-wp</code> pour que le site fonctionne localement.</li>
-                <li>Sur le site Zoo hébergé en ligne, une <strong>iframe</strong> ne s’actualisait pas malgré un <code>Ctrl + F5</code>. La solution a été de renommer le fichier PHP concerné et de mettre à jour le lien dans la sidebar.</li>
-                <li>J’ai mis en place des sauvegardes manuelles du projet WordPress via export de la base de données et des fichiers, afin d'assurer la continuité du service.</li>
-            </ul>
-            <p>Ces interventions illustrent ma capacité à <strong>répondre aux incidents</strong> et à assurer la maintenance technique d’un service.</p>
-        </section>
-        <br>
+                            <div>
+                                <label class="block font-medium text-gray-700">Nom</label>
+                                <input type="text" name="name" required
+                                    class="w-full p-3 border rounded-xl focus:ring-2 focus:ring-blue-500">
+                            </div>
 
-        <!-- Référencement et identité professionnelle -->
-        <section>
-            <h3>📈 Référencement et identité professionnelle</h3>
-            <p>Pour améliorer la visibilité de mes projets en ligne, je me suis intéressé au référencement de mon site WordPress et à la publication sur GitHub Pages. Si je souhaite aller plus loin, je pourrais installer des <strong>plugins SEO</strong> (comme Yoast SEO) afin d’optimiser le contenu pour les moteurs de recherche.</p>
-            <p>Il est possible que je prévoie d’intégrer des outils d’analyse tels que Google Analytics ou Matomo, qui permettent de suivre le nombre de visiteurs, leur provenance, leur comportement sur le site, ainsi que les pages les plus consultées. Ces données sont essentielles pour adapter le contenu, optimiser le référencement naturel (SEO) et améliorer l’expérience utilisateur.</p>
-            <p>Cette étape de mesure me permettra de mieux comprendre les besoins des visiteurs et d’ajuster mes stratégies pour maximiser la visibilité et l’efficacité de mes services en ligne.</p>
-            <p>Je gère aussi mon identité professionnelle via mon <strong>CV</strong>, mon compte <strong>GitHub</strong> et <strong>LinkedIn</strong>, où je partage mes réalisations et veille à rester actif dans le domaine.</p>
-        </section>
-        <br>
+                            <div>
+                                <label class="block font-medium text-gray-700">Email</label>
+                                <input type="email" name="_replyto" required
+                                    class="w-full p-3 border rounded-xl focus:ring-2 focus:ring-blue-500">
+                            </div>
 
-        <!-- Conclusion -->
-        <p>Merci pour votre visite ! N'hésitez pas à me contacter pour toute question ou suggestion.</p>
-        <br><br>
-    </main>
-    <div class="video-background">
-        <video autoplay muted loop playsinline>
-            <source src="Images et sources/Background_video.mp4" type="video/mp4">
-        </video>
-    </div>
-    <footer>
-        <p>
-            © 2025 MOCAN Bogdan | 
-            <a href="https://github.com/Bogdan-MOCAN" target="_blank">GitHub</a> | 
-            <a href="https://www.linkedin.com/in/bogdan-mocan-aa01a5302/" target="_blank">LinkedIn</a> | 
-            <a href="Images et sources/CV_Octobre.pdf" target="_blank">Mon CV</a>
+                            <div>
+                                <label class="block font-medium text-gray-700">Message</label>
+                                <textarea name="message" required
+                                        class="w-full p-3 border rounded-xl h-32 focus:ring-2 focus:ring-blue-500"></textarea>
+                            </div>
+
+                            <button type="submit"
+                                    class="bg-blue-600 text-white font-semibold p-3 rounded-xl w-full hover:bg-blue-700 transition">
+                                Envoyer
+                            </button>
+                        </form>
+
+                        <p class="text-xs text-gray-500 mt-3">
+                            Les informations envoyées via ce formulaire sont uniquement utilisées pour vous répondre.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- LIENS DANS UN COIN -->
+                <div class="mt-6 text-right">
+                    <a href="https://github.com/Bogdan-MOCAN" target="_blank" class="text-gray-700 hover:text-blue-600 mr-4">
+                        GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/bogdan-mocan-aa01a5302/" target="_blank" class="text-gray-700 hover:text-blue-600">
+                        LinkedIn
+                    </a>
+                </div>
+
+            </section>
+
+        </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-100 py-4 text-center text-gray-600 mt-10">
+        <p>© 2025 - Bogdan MOCAN | Portfolio | 
+            <a href="politique-confidentialite.html" class="text-blue-600 hover:underline">Politique de confidentialité</a>
         </p>
     </footer>
-</body>
-</html>
+
+    <!-- AOS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+    AOS.init({
+        duration: 1000,
+        easing: 'ease-in-out', 
+        once: true,
+        mirror: false,
+    });
+    </script>
+
+    </body>
+    </html>

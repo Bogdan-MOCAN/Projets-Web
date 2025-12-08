@@ -1,197 +1,190 @@
-/* MOCAN Bogdan */
-body, ul, li {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  font-family: Verdana, sans-serif;
-  color: white;
+/* =============================
+   TYPOGRAPHIE
+============================= */
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.5;
 }
 
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #1D4ED8;
+}
+
+/* =============================
+   EFFETS SUR LES IMAGES
+============================= */
+img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 100%;
+    height: auto;
+}
+
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* =============================
+   FORMULAIRE
+============================= */
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    border: 1px solid #CBD5E1;
+    border-radius: 12px;
+    padding: 12px;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #2563EB;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+    outline: none;
+}
+
+/* =============================
+   SECTIONS
+============================= */
+section {
+    transition: all 0.3s ease;
+}
+
+section.fade {
+    opacity: 1;
+    transform: none;
+}
+
+/* =============================
+   ANIMATION
+============================= */
+.fadeInUp {
+    animation: fadeInUp 0.8s ease-out both;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =============================
+   NAVBAR
+============================= */
 header {
-  text-align: center;
+    background: white;
 }
 
-header h1 {
-  margin-bottom: 10px;
+header nav ul li a {
+    position: relative;
+    padding-bottom: 3px;
 }
 
-header hr {
-  width: 50%;
-  color: white;
+header nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background-color: #1D4ED8;
+    transition: width 0.3s;
 }
 
-header label {
-  display: none;
+header nav ul li a:hover::after {
+    width: 100%;
 }
 
-header input[type="checkbox"] {
-  display: none;
-}
-
-.navigation {
-  background-color: #00aaff;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  padding: 5px 0;
-}
-
-.navigation > ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.navigation li {
-  position: relative;
-  padding: 10px 15px; 
-  color: white;
-  text-align: center;
-  margin: 0 5px;
-  font-size: 14px;
-}
-
-.navigation li:hover {
-  background-color: #444;
-  border-top: 2px solid #ffc800;
-  transition: background-color 0.3s, border-top 0.3s;
-}
-
-.navigation li ul {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #ffc800;
-  padding: 0;
-  z-index: 1000;
-  border: 1px solid #444;
-  max-height: 200px;
-  overflow-y: auto;
-}
-
-.navigation li:hover > ul {
-  display: block;
-}
-
-.navigation a {
-  color: #ffc800;
-  text-decoration: none;
-  display: inline-block;
-  padding: 5px 10px;
-}
-
-.navigation a:hover {
-  background-color: #444;
-  font-weight: bold;
-  color: #ffc800;
-  transition: background-color 0.3s;
-}
-
-.navigation li ul a {
-  color: white;
-  padding: 5px 10px;
-  width: 150px;
-  text-align: left;
-  font-size: 12px;
-}
-
-.navigation li ul a:hover {
-  background-color: #444;
-  font-weight: bold;
-  color: #ffc800;
-}
-
-.video-background {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  z-index: -1;
-}
-
-.video-background video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  min-width: 100%;
-  min-height: 100%;
-  object-fit: cover; 
-}
-
-.content {
-  position: relative;
-  z-index: 1; 
-  text-align: center;
-  color: white;
-  font-family: Arial, sans-serif;
-  padding: 50px;
-}
-
-footer {
-  text-align: center;
-  padding: 10px;
-  background-color: #00aaff;
-  color: white;
-  margin-top: 20px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-
+/* =============================
+   FOOTER
+============================= */
 footer a {
-  color: #ffc800;
-  text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 footer a:hover {
-  text-decoration: underline;
+    color: #1D4ED8;
+    text-decoration: underline;
 }
 
-@media screen and (max-width: 680px) {
-  header label {
-    display: block;
-    cursor: pointer;
-    color: white;
-    padding: 10px;
-    background-color: #00aaff;
-  }
+/* =============================
+   TABLETTES
+============================= */
+@media (max-width: 1024px) {
+    img {
+        max-width: 260px;
+        margin: 0 auto;
+    }
+}
 
-  .navigation {
-    display: none;
-  }
+/* =============================
+   MOBILE — MODE "DÉZOOMÉ"
+============================= */
+@media (max-width: 768px) {
 
-  header input[type="checkbox"]:checked + .navigation {
-    display: block;
-  }
+    body {
+        font-size: 0.9rem;
+    }
 
-  .navigation > ul {
-    flex-direction: column;
-    align-items: stretch;
-  }
+    main {
+        padding: 1rem !important;
+    }
 
-  .navigation li {
-    padding: 10px;
-    width: 100%;
-    margin: 0;
-  }
+    /* Header plus compact + empilement propre */
+    header {
+        padding: 0.3rem 0 !important;
+    }
 
-  .navigation a {
-    display: block;
-    padding: 10px;
-    text-align: center;
-  }
+    header .container {
+        flex-direction: column !important;
+        gap: 0.3rem !important;
+        padding: 0.3rem 0.6rem !important;
+    }
 
-  .navigation li ul {
-    position: static;
-    width: 100%;
-  }
+    /* Titre plus petit */
+    header h1 {
+        font-size: 1.1rem !important;
+        line-height: 1.2;
+        white-space: nowrap;
+    }
 
-  .navigation li ul a {
-    font-size: 11px;
-    padding: 8px; 
-  }
+    /* Menu toujours horizontal mais plus petit */
+    header nav ul {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: center !important;
+        align-items: center !important;
+        flex-wrap: nowrap !important;
+        gap: 0.45rem !important;
+    }
+
+    header nav ul li a {
+        font-size: 0.75rem !important;
+        padding: 1px 2px !important;
+        white-space: nowrap;
+    }
+
+    h1 {
+        font-size: 1.4rem !important;
+    }
+
+    h2 {
+        font-size: 1.2rem !important;
+    }
+
+    section {
+        padding: 1.2rem !important;
+        margin-bottom: 1rem !important;
+    }
+
+    img {
+        max-width: 220px !important;
+    }
 }
