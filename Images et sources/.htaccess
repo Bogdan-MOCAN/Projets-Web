@@ -1,0 +1,2 @@
+# Forcer tous les fichiers .sql à s'afficher dans le navigateur
+AddType text/plain .sql
